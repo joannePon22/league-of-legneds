@@ -9,7 +9,9 @@ Our project chooses the data of League of Legend Competitive Matches. This data 
 ## Cleaning and EDA
 - Data Cleaning:
 We clean the data by only taking a specific list of leagues, since our analysis only wants the  leagues that are in tier 1. By cleaning the data, we can focus on the data that we want. It help us to analyze the information faster. 
+```py
 print(tier_1[['gameid', 'gamelength', 'league']].head().to_markdown(index=False))
+```
 
 | gameid           |   gamelength | league   |
 |:-----------------|-------------:|:---------|
@@ -30,8 +32,9 @@ This plot shows the relationship between different leagues and their gamelength.
 
 - Interesting Aggregates:
 This pivot table contains the information of the mean, count maximum, minimum, median, standard deviation, and variance of the gamelength for each league.
-
+```py
 print(tier_pivot[['mean', 'count', 'max', 'min', 'median', 'var', 'std']].to_markdown(index=False))
+```
 |    mean |   count |   max |   min |   median |      var |    std |
 |--------:|--------:|------:|------:|---------:|---------:|-------:|
 | 1974.09 |     243 |  2861 |  1275 |     1928 | 103768   | 322.13 |
