@@ -23,6 +23,20 @@ This plot shows how many games in each interval of gamelength. Most of the games
 This plot shows the relationship between different leagues and their gamelength. In this plot, we can see that LPL and LCK have a gamelength that are much more than the other leagues.
 <iframe src="assets/fig1.html" width=800 height=600 frameBorder=0></iframe>
 
+This pivot table contains the information of the mean, count maximum, minimum, median, standard deviation, and variance of the gamelength for each league.
+print(tier_pivot[['mean', 'count', 'max', 'min', 'median', 'var', 'std']].to_markdown(index=False))
+|    mean |   count |   max |   min |   median |      var |    std |
+|--------:|--------:|------:|------:|---------:|---------:|-------:|
+| 1974.09 |     243 |  2861 |  1275 |     1928 | 103768   | 322.13 |
+| 2020.06 |     467 |  3326 |  1145 |     1957 | 129359   | 359.66 |
+| 1981.59 |     306 |  3097 |  1308 |     1923 | 105827   | 325.31 |
+| 1993.26 |     243 |  3293 |  1176 |     1952 | 130677   | 361.49 |
+| 1921.77 |     214 |  3006 |  1137 |     1870 | 129998   | 360.55 |
+| 1989.54 |     187 |  3351 |  1352 |     1930 | 109292   | 330.59 |
+| 1893.44 |     786 |  3363 |  1150 |     1856 |  98536.1 | 313.9  |
+| 1858.03 |     271 |  3047 |  1115 |     1809 | 116989   | 342.04 |
+| 1800.96 |     323 |  2910 |  1071 |     1769 |  83092.6 | 288.26 |
+
 
 Assessment of Missingness:
 
