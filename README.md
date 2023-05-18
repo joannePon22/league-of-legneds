@@ -49,14 +49,14 @@ Assessment of Missingness:
 
 Hypothesis Testing:
  - Hypothesis Testing:
-Null Hypothesis: There is no significant difference in the average game length between tier 1 leagues in League of Legends.
-Alternative hypothesis: There is a significant difference in the average game lengths between tier 1 leagues in League of Legends.
+ Null Hypothesis: There is no significant difference in the average game length between tier 1 leagues in League of Legends.
+ Alternative hypothesis: There is a significant difference in the average game lengths between tier 1 leagues in League of Legends.
 
-Test statistic: T-test
-Significance level: 0.05
-P-value: 3.1489400690188618e-24
-The T test is a good choice for this question because we are comparing the means of groups. We choose 0.05 as our significant level is because we don’t have that much evidence to reject this null hypothesis. 
-We see that there is a significant difference in average game duration between different regions.
+ Test statistic: T-test
+ Significance level: 0.05
+ P-value: 3.1489400690188618e-24
+ The T test is a good choice for this question because we are comparing the means of groups. We choose 0.05 as our significant level is because we don’t have that much evidence to reject this null hypothesis. 
+ We see that there is a significant difference in average game duration between different regions.
 
 
 
