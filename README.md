@@ -2,11 +2,11 @@
 This is a project for DSC 80 at UCSD
 by Joanne Pon and Justin Huang
 
-Introduction:
-- Introduction and Question Identification:
+## Introduction:
+Introduction and Question Identification:
 Our project chooses the data of League of Legend Competitive Matches. This data contains information of players and teams from League of Legends competitive matches. The question that we are interested in is does the average game duration differ significantly between different competitive regions in tier-one professional leagues in 2022? The reader of the website should pay attention to this question because the game duration is important for implementing strategies. Understanding the difference lets people make a more effective decision toward the games. There are 149400 rows and 123 columns in this dataset, and columns that are relevant to our questions are ‘gameid’, ‘gamelength’, ‘league’. The gameid column represents the unique identifier to each game. The gamelength column represents how long the game takes. The league in which the game was played. 
 
-Cleaning and EDA
+## Cleaning and EDA
 - Data Cleaning:
 We clean the data by only taking a specific list of leagues, since our analysis only wants the  leagues that are in tier 1. By cleaning the data, we can focus on the data that we want. It help us to analyze the information faster. 
 print(tier_1[['gameid', 'gamelength', 'league']].head().to_markdown(index=False))
@@ -45,10 +45,10 @@ print(tier_pivot[['mean', 'count', 'max', 'min', 'median', 'var', 'std']].to_mar
 | 1800.96 |     323 |  2910 |  1071 |     1769 |  83092.6 | 288.26 |
 
 
-Assessment of Missingness:
+## Assessment of Missingness:
 
 
-Hypothesis Testing:
+## Hypothesis Testing:
 - Null Hypothesis: There is no significant difference in the average game length between tier 1 leagues in League of Legends.
 - Alternative hypothesis: There is a significant difference in the average game lengths between tier 1 leagues in League of Legends.
 - Test statistic: T-test
