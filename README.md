@@ -2,9 +2,13 @@
 This is a project for DSC 80 at UCSD
 by Joanne Pon and Justin Huang
 
+---
+
 ## Introduction:
 Introduction and Question Identification:
 Our project chooses the data of League of Legend Competitive Matches. This data contains information of players and teams from League of Legends competitive matches. The question that we are interested in is does the average game duration differ significantly between different competitive regions in tier-one professional leagues in 2022? The reader of the website should pay attention to this question because the game duration is important for implementing strategies. Understanding the difference lets people make a more effective decision toward the games. There are 149400 rows and 123 columns in this dataset, and columns that are relevant to our questions are ‘gameid’, ‘gamelength’, ‘league’. The gameid column represents the unique identifier to each game. The gamelength column represents how long the game takes. The league in which the game was played. 
+
+---
 
 ## Cleaning and EDA
 - Data Cleaning:
@@ -47,7 +51,7 @@ print(tier_pivot[['mean', 'count', 'max', 'min', 'median', 'var', 'std']].to_mar
 | 1858.03 |     271 |  3047 |  1115 |     1809 | 116989   | 342.04 |
 | 1800.96 |     323 |  2910 |  1071 |     1769 |  83092.6 | 288.26 |
 
-
+---
 ## Assessment of Missingness:
 
 
@@ -60,5 +64,6 @@ print(tier_pivot[['mean', 'count', 'max', 'min', 'median', 'var', 'std']].to_mar
 - The T test is a good choice for this question because we are comparing the means of groups. We choose 0.05 as our significant level is because we don’t have that much evidence to reject this null hypothesis. 
 - We see that there is a significant difference in average game duration between different regions.
 
+---
 
 
