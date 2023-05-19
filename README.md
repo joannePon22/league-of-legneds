@@ -52,8 +52,10 @@ print(tier_pivot[['mean', 'count', 'max', 'min', 'median', 'var', 'std']].to_mar
 | 1800.96 |     323 |  2910 |  1071 |     1769 |  83092.6 | 288.26 |
 
 ---
+
 ## Assessment of Missingness:
 
+---
 
 ## Hypothesis Testing:
 - Null Hypothesis: There is no significant difference in the average game length between tier 1 leagues in League of Legends.
