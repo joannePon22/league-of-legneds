@@ -1,4 +1,4 @@
-# league-of-legneds
+# league-of-legends
 This is a project for DSC 80 at UCSD
 by Joanne Pon and Justin Huang
 
